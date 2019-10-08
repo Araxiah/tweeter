@@ -1,0 +1,17 @@
+header {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  background-color: #8a8586;
+background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+}
+
+.img {
+  position: relative;
+  margin-left: 45%;
+}
+
+.name {
+  position: relative;
+  margin-left: 47%; 
+}

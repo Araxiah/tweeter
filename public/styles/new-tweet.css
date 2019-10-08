@@ -1,0 +1,25 @@
+.new-tweet {
+  margin: auto;
+  width: 90%; 
+}
+
+.new-tweet h2 {
+  margin-left: 45%;
+}
+
+.new-tweet textarea {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+  display: block;
+  width: 100%;
+}
+main section span {
+  display: inline-block;
+  margin-left: 90%;
+}
+
+main section input {
+  border-radius: 12px;
+}
