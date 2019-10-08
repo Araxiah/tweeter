@@ -1,0 +1,44 @@
+.tweetstyle {
+  margin-top: 5%;
+  border: solid;
+  
+}
+
+.profilePic {
+  display: inline-block;
+  position: relative;
+  margin: 0.5%;
+}
+
+.tweetstyle h2 {
+position: relative;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+}
+
+.hashtag {
+  margin-left: auto;
+  margin-right: 1%;
+}
+
+.content {
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-bottom: 1px solid black;
+}
+
+.time {
+  font-size: small;
+  margin-left: 2%;  
+  margin-top: 1%;
+  margin-bottom: 0.5%;
+}
+
+.profilePic {
+  height: 60px;
+  width: 60px;
+}
