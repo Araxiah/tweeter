@@ -42,6 +42,12 @@ $(document).ready(function () {
   };
 
   const createTweetElement = function (i) {
+    const escape = function (str) {
+      let div = document.createElement('div');
+      div.appendChild(document.createTextNode(str));
+      return div.innerHTML;
+    }
+    const safeHTML = `<p>${escape(i.content.text)}</p>`
     let markup = `
 <article class="tweetstyle">
     <footer>
@@ -50,7 +56,7 @@ $(document).ready(function () {
       <div class="hashtag">${i.user.handle}</div>
     </footer>
     <div class="content">
-      ${i.content.text}
+      ${safeHTML}
     </div>
     <div class="time">
       ${i.created_at}
