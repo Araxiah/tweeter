@@ -3,15 +3,18 @@ header {
   height: 400px;
   width: 100%;
   background-color: #8a8586;
-background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+background-image: url("https://www.transparenttextures.com/patterns/always-grey.png"););
 }
 
 .img {
-  position: relative;
-  margin-left: 45%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .name {
-  position: relative;
-  margin-left: 47%; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }

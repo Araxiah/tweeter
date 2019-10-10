@@ -1,11 +1,15 @@
 .new-tweet {
   margin: auto;
   width: 90%; 
+  display: none;
+
 }
 
 .new-tweet h2 {
-  margin-left: 45%;
-}
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;}
 
 .new-tweet textarea {
   border: 0;
