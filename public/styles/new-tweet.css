@@ -24,6 +24,14 @@ main section span {
   margin-left: 90%;
 }
 
-main section input {
+.tweetOut {
   border-radius: 12px;
+  margin: 2%;
+  background: transparent;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.tweetOut:hover {
+  background: green
 }

@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
   <!-- Meta Information -->
   <title>Tweeter - Home Page</title>
 
@@ -68,14 +70,11 @@
       <h2>Compose Tweet</h2>
       <form id="submitTweet" action="/tweets/" method="POST">
         <textarea name="text" placeholder="What are you humming about?"></textarea>
-        <input type="submit" value="Tweet">
+        <input class="tweetOut" type="submit" value="Tweet">
         <span class="counter">140</span>
       </form>
     </section>
-    <div id="tweets-container">
-
-    </div>
-
+    <div id="tweets-container"></div>
     </article>
   </main>
 </body>

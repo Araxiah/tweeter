@@ -1,9 +1,11 @@
+
+
 header {
   position: relative;
   height: 400px;
   width: 100%;
   background-color: #8a8586;
-background-image: url("https://www.transparenttextures.com/patterns/always-grey.png"););
+background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
 }
 
 .img {
@@ -17,4 +19,18 @@ background-image: url("https://www.transparenttextures.com/patterns/always-grey.
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    position: relative;
+    display: inline-block;
+    border: solid black;
+    width: 30%;
+    margin-top: 5%;
+    margin-left: 8%;
+    height: 400px;
+    background-color: #8a8586;
+  background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+  }
 }

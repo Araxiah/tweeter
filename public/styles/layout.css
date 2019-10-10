@@ -24,8 +24,7 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
-
- .container {
+.container {
   font-family: 'Source Sans Pro', sans-serif;
   margin: auto;
   width: 90%;
@@ -35,12 +34,26 @@ body {
    margin-left: 46%;
  }
 
+/* Text error display once the char 
+has been reached */
+
  .texterr {
   display: none;
   border-style: solid;
- border-color: red;
+  border-color: red;
   text-align: center;
   font-weight: bold;
   color:red;
 
+ }
+
+
+ @media only screen and (min-width: 1024px) {
+  .container {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: inline-block;
+    width: 45%;
+    position: absolute;
+    margin-left: 10%;
+   }
  }

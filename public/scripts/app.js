@@ -1,12 +1,7 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
+//Loads and renders tweets that are inputed in
 
 $(document).ready(function () {
-  console.log("hi");
-
+  //Posts a tweet to /tweets and loads it on the page
   $("#submitTweet").submit(function (event) {
     event.preventDefault()
     let values = $(this).serialize();
@@ -21,7 +16,8 @@ $(document).ready(function () {
     });
   });
 
-
+  //this function gets the tweet from /tweets and
+  //runs its through the markup for the html format
   const loadTweet = function () {
     $('#tweets-container').empty();
     $.ajax({
@@ -34,24 +30,40 @@ $(document).ready(function () {
     });
   };
 
+  //loops through the array of tweets and calls the callback
+  //to render the html markup
   const renderTweet = function (arr) {
     for (let i of arr) {
-      console.log("renderTweet i = ", i);
       createTweetElement(i);
     }
   };
 
+
+  //The actual html markup of the tweets that will be shown on
+  //the page.
   const createTweetElement = function (i) {
+    //Help against code injections
     const escape = function (str) {
       let div = document.createElement('div');
       div.appendChild(document.createTextNode(str));
       return div.innerHTML;
+    };
+
+    //To find the time
+    const time = function (time) {
+      let date = new Date(time * 1000);
+      let hour = date.getHours();
+      let min = "0" + date.getMinutes();
+      let sec = "0" + date.getSeconds();
+      return hour + ':' + min.substr(-2) + ':' + sec.substr(-2);
     }
+
     const safeHTML = `<p>${escape(i.content.text)}</p>`
+
     let markup = `
 <article class="tweetstyle">
     <footer>
-      <img class="profilePic" scr="${i.user.avatars}">
+      <img class="profilePic" src="${i.user.avatars}">
       <div>${i.user.name}</div>
       <div class="hashtag">${i.user.handle}</div>
     </footer>
@@ -59,7 +71,7 @@ $(document).ready(function () {
       ${safeHTML}
     </div>
     <div class="time">
-      ${i.created_at}
+      ${time(i.created_at)}
     </div>
 
   </article>
