@@ -38,6 +38,7 @@ body {
 has been reached */
 
  .texterr {
+  margin-top: 5%;
   display: none;
   border-style: solid;
   border-color: red;

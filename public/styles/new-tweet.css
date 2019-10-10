@@ -27,6 +27,7 @@ main section span {
 .tweetOut {
   border-radius: 12px;
   margin: 2%;
+  border: 2px solid black;
   background: transparent;
   transition: 1s;
   cursor: pointer;
