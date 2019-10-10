@@ -9,7 +9,7 @@ $(document).ready(function () {
       counter.css("color", "black");
     }
     if (num === 141) {
-      alert("whoops too long!")
+      $(".texterr").slideToggle(1000);
     }
     if (num > 140) {
       $("#submitTweet input").prop('disabled', true)

@@ -34,3 +34,13 @@ body {
  .summary {
    margin-left: 46%;
  }
+
+ .texterr {
+  display: none;
+  border-style: solid;
+ border-color: red;
+  text-align: center;
+  font-weight: bold;
+  color:red;
+
+ }

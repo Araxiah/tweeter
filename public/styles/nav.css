@@ -10,10 +10,11 @@ nav {
 
  .top-of-page {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
  }
 
  .tweeter {
+  margin-right: auto;
   position: relative;
   top: 1.5em;
   left: 1.5em;
@@ -21,8 +22,10 @@ nav {
   bottom: 1.5em;
  }
 
-.write {
-  margin-right: 2%;
-  margin-top: 10%;  
+.button{
+  margin-right: 5%;
+  margin-top: 10%; 
+  text-align: center; 
+  border-radius: 12px;
 }
 
