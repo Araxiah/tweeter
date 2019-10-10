@@ -4,21 +4,20 @@ header {
   position: relative;
   height: 400px;
   width: 100%;
-  background-color: #8a8586;
-  background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+  background-color: #6aa6e6;
+  background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
 }
 
 .img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5%;
+  margin-top: 5%
 }
 
 .name {
   color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  display: block;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;  display: block;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -33,7 +32,7 @@ header {
     margin-top: 5%;
     margin-left: 8%;
     height: 400px;
-    background-color: #8a8586;
-  background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+    background-color: #6aa6e6;
+    background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
   }
 }
