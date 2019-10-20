@@ -76,7 +76,7 @@ $(document).ready(function () {
 
   </article>
   `;
-    $('#tweets-container').append(markup);
+    $('#tweets-container').prepend(markup);
   };
 
   loadTweet();

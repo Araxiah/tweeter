@@ -48,6 +48,17 @@ has been reached */
 
  }
 
+ .emptytexterr {
+  margin-top: 5%;
+  display: none;
+  border-style: solid;
+  border-color: red;
+  text-align: center;
+  font-weight: bold;
+  color:red;
+
+ }
+
 
  @media only screen and (min-width: 1024px) {
   .container {
