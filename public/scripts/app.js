@@ -11,6 +11,7 @@ $(document).ready(function () {
       data: values,
       success: () => {
         console.log("completed POST");
+        $('.text').val("");
         loadTweet();
       }
     });
